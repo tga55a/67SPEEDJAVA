@@ -65,7 +65,7 @@ public class SPACEINVADERS367 extends JPanel implements ActionListener, KeyListe
     private int shakeIntensity = 0;
 
     // ---------------- BOSS SYSTEM ----------------
-    private int bossPhase = 0; // 0: None, 1: Mini Boss, 2: Final Boss 67
+    private int bossPhase = 1; // 0: None, 1: Mini Boss, 2: Final Boss 67
     private boolean bossActive = false;
     private boolean bossDescending = false; 
     private Rectangle boss;
@@ -96,11 +96,11 @@ public class SPACEINVADERS367 extends JPanel implements ActionListener, KeyListe
 
         // --- BOSS TRIGGER LOGIC ---
         // Trigger Boss 1 at score 15
-        if (score >= 15 && bossPhase == 0 && !bossDescending) {
+        if (score >= 5 && bossPhase == 0 && !bossDescending) {
             triggerBoss(1, 40, Color.MAGENTA);
         }
         // Trigger Final Boss 67 at score 60 (Harder!)
-        if (score >= 60 && bossPhase == 1 && !bossActive && !bossDescending) {
+        if (score >= 1 && bossPhase == 1 && !bossActive && !bossDescending) {
             triggerBoss(2, 100, Color.YELLOW);
         }
 
