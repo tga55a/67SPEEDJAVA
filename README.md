@@ -1,6 +1,6 @@
 # Controls (important)
 Controls:
-- PRESS "P" to SKIP the STORY
+- PRESS "P" to **SKIP** the STORY
 - Press "ENTER" to continue the STORY
 - Use "67" to shoot.
 - Move with ARROW KEYS
